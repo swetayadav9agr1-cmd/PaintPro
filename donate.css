@@ -1,0 +1,498 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.logo{
+
+    font-size:30px;
+    font-weight:700;
+    color:#4F46E5;
+
+}
+
+.nav-links{
+
+    display:flex;
+    list-style:none;
+    gap:25px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#4F46E5;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    background:linear-gradient(135deg,#4F46E5,#6D5EF5);
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    width:800px;
+    max-width:90%;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+
+}
+
+.btn{
+
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 40px;
+    background:white;
+    color:#4F46E5;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:8px;
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#eeeeff;
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   WHY DONATE
+=========================== */
+
+.why{
+
+    padding:70px 80px;
+
+}
+
+.why h2{
+
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+
+}
+
+.why-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+.why-card{
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.why-card h3{
+
+    color:#4F46E5;
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+   DONATION FORM
+=========================== */
+
+.donate{
+
+    background:white;
+    padding:70px 80px;
+
+}
+
+.donate h2{
+
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+
+}
+
+form{
+
+    width:700px;
+    max-width:100%;
+    margin:auto;
+
+}
+
+form input,
+form textarea,
+form select{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+
+}
+
+form textarea{
+
+    resize:none;
+
+}
+
+form button{
+
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#4F46E5;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+form button:hover{
+
+    background:#372FC7;
+    transform:scale(1.02);
+
+}
+
+/* ===========================
+   WHERE USED
+=========================== */
+
+.uses{
+
+    padding:70px 80px;
+
+}
+
+.uses h2{
+
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+
+}
+
+.use-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+
+}
+
+.use-card{
+
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.use-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.use-card h3{
+
+    color:#4F46E5;
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+   PROCESS
+=========================== */
+
+.process{
+
+    background:#4F46E5;
+    color:white;
+    padding:70px 80px;
+    text-align:center;
+
+}
+
+.process h2{
+
+    font-size:40px;
+    margin-bottom:40px;
+
+}
+
+.steps{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+
+}
+
+.step{
+
+    background:white;
+    color:#4F46E5;
+    padding:20px 25px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.step:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   IMPACT
+=========================== */
+
+.impact{
+
+    padding:70px 80px;
+
+}
+
+.impact h2{
+
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+
+}
+
+.impact-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+
+}
+
+.impact-box{
+
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.impact-box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.impact-box h1{
+
+    color:#4F46E5;
+    font-size:45px;
+    margin-bottom:10px;
+
+}
+
+/* ===========================
+   PLEDGE
+=========================== */
+
+.pledge{
+
+    background:white;
+    padding:70px 80px;
+    text-align:center;
+
+}
+
+.pledge h2{
+
+    font-size:40px;
+    margin-bottom:25px;
+
+}
+
+.pledge p{
+
+    width:700px;
+    max-width:90%;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:25px;
+
+}
+
+.pledge button{
+
+    padding:15px 35px;
+    background:#4F46E5;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.pledge button:hover{
+
+    background:#372FC7;
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:35px;
+
+}
+
+footer h2{
+
+    margin-bottom:10px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+
+}
+
+.nav-links{
+
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.why,
+.donate,
+.uses,
+.process,
+.impact,
+.pledge{
+
+    padding:50px 20px;
+
+}
+
+}

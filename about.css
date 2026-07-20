@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:white;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#4f46e5;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:#4f46e5;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 80px;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:50px;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    color:#666;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:90%;
+    max-width:500px;
+    border-radius:20px;
+}
+
+/* Mission */
+
+.mission{
+    text-align:center;
+    padding:60px 80px;
+}
+
+.mission h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.mission p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    color:#555;
+}
+
+/* Features */
+
+.features{
+    padding:60px 80px;
+}
+
+.features h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#4f46e5;
+}
+
+/* Impact */
+
+.impact{
+    background:#4f46e5;
+    color:white;
+    padding:60px 80px;
+}
+
+.impact h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.impact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.impact-box{
+    text-align:center;
+}
+
+.impact-box h1{
+    font-size:45px;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}

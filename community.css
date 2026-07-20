@@ -1,0 +1,461 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.logo{
+
+    font-size:30px;
+    font-weight:700;
+    color:#4F46E5;
+
+}
+
+.nav-links{
+
+    display:flex;
+    list-style:none;
+    gap:25px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#4F46E5;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    background:linear-gradient(135deg,#4F46E5,#6D5EF5);
+
+    color:white;
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    width:800px;
+
+    max-width:90%;
+
+    margin:auto;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:15px 40px;
+
+    background:white;
+
+    color:#4F46E5;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+    background:#eeeeff;
+
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.projects{
+
+    padding:70px 80px;
+
+}
+
+.projects h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+.project-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.card h3{
+
+    color:#4F46E5;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+   WHY SECTION
+=========================== */
+
+.why{
+
+    background:white;
+
+    padding:70px 80px;
+
+}
+
+.why h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
+}
+
+.why ul{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.why li{
+
+    font-size:20px;
+
+    margin:20px 0;
+
+    list-style:none;
+
+}
+
+/* ===========================
+   IMPACT
+=========================== */
+
+.impact{
+
+    background:#4F46E5;
+
+    color:white;
+
+    padding:70px 80px;
+
+}
+
+.impact h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+.impact-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.box{
+
+    background:white;
+
+    color:#4F46E5;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.box h1{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+   VOLUNTEER
+=========================== */
+
+.volunteer{
+
+    padding:70px 80px;
+
+}
+
+.volunteer h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
+
+form{
+
+    width:700px;
+
+    max-width:100%;
+
+    margin:auto;
+
+}
+
+form input,
+form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+form textarea{
+
+    height:150px;
+
+    resize:none;
+
+}
+
+form button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:#4F46E5;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+form button:hover{
+
+    background:#372FC7;
+
+    transform:scale(1.02);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+}
+
+footer h2{
+
+    margin-bottom:10px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+.nav-links{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.projects,
+.why,
+.impact,
+.volunteer{
+
+    padding:50px 20px;
+
+}
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paint Calculator | PaintPro</title>
+
+   <link rel="stylesheet" href="calculator.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+
+    <div class="logo"> PaintPro</div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="calculator.html">Calculator</a></li>
+
+        <li><a href="painters.html">Painters</a></li>
+
+        <li><a href="shop.html">Paint Shops</a></li>
+        <li><a href="community.html">Community</a></li>
+
+<li><a href="donate.html">Donate Paint</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+    <div class="container">
+
+        <h1>Paint Calculator</h1>
+
+        <p>Enter the room details below.</p>
+
+        <div class="calculator">
+
+            <input type="number" id="length" placeholder="Room Length (feet)">
+
+            <input type="number" id="width" placeholder="Room Width (feet)">
+
+            <input type="number" id="height" placeholder="Room Height (feet)">
+
+            <input type="number" id="doors" placeholder="Number of Doors">
+
+            <input type="number" id="windows" placeholder="Number of Windows">
+<input type="number" id="coats" placeholder="Number of Paint Coats">
+
+<label>Select Paint Brand</label>
+
+<select id="brand">
+
+    <option value="350">Asian Paints (₹350/L)</option>
+
+    <option value="320">Berger Paints (₹320/L)</option>
+
+    <option value="300">Nerolac (₹300/L)</option>
+
+    <option value="280">Dulux (₹280/L)</option>
+
+</select>
+
+<button onclick="calculatePaint()">
+    Calculate
+</button>
+
+
+        </div>
+
+      <div class="result">
+
+    <h2>Paint Estimation Result</h2>
+
+    <div class="result-box">
+
+        <p id="area"></p>
+
+        <p id="paint"></p>
+
+        <p id="cost"></p>
+
+        <p id="waste"></p>
+
+        <p id="recommendation"></p>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+
+</html>
